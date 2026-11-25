@@ -260,30 +260,6 @@
   </section>
   <p class="derechos">© 2026 Quelal Photography. Todos los derechos reservados.</p>
 </footer>
-<script>
-  const visorAlbum = document.querySelector("#visor-album");
-  const imagenAmpliada = visorAlbum.querySelector("img");
-  const tituloAmpliado = visorAlbum.querySelector("p");
-
-  document.querySelectorAll(".foto-album-boton").forEach((boton) => {
-    boton.addEventListener("click", () => {
-      const imagen = boton.querySelector("img");
-      imagenAmpliada.src = imagen.src;
-      imagenAmpliada.alt = imagen.alt;
-      tituloAmpliado.textContent = boton.parentElement.querySelector("figcaption").textContent;
-      visorAlbum.showModal();
-    });
-  });
-
-  visorAlbum.querySelector(".visor-album-cerrar").addEventListener("click", () => {
-    visorAlbum.close();
-  });
-
-  visorAlbum.addEventListener("click", (evento) => {
-    if (evento.target === visorAlbum) {
-      visorAlbum.close();
-    }
-  });
 </script>
 </body>
 </html>
