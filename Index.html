@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Proyecto Final, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <a class="logo" href="Index.html" aria-label="Quelal Photography, inicio">
+    <span class="logo-nombre">Quelal</span>
+    <span class="logo-detalle">Photography</span>
+  </a>
+  <nav class="menu" aria-label="Navegación principal">
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="#galeria">Portafolio</a></li>
+      <li><a href="#album">Mi álbum</a></li>
+      <li><a href="#nosotros">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="hero-etiqueta">QUELAL PHOTOGRAPHY</p>
+  <h1>Fotografía que cuenta tu historia</h1>
+  <p>Retratos, eventos y momentos especiales capturados con emoción.</p>
+  <a class="boton" href="#galeria">Explorar portafolio</a>
+</section>
+<section class="slider" id="galeria" aria-labelledby="galeria-titulo">
+  <div class="slider-encabezado">
+    <p class="slider-etiqueta">UNA MIRADA A MI TRABAJO</p>
+    <h2 id="galeria-titulo">Galería de momentos</h2>
+    <p>Historias, emociones y recuerdos capturados a través de mi cámara.</p>
+  </div>
+  <input type="radio" name="slider" id="s1" checked>
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3">
+
+  <figure class="slide slide1">
+    <img class="slide-foto slide-foto-retratos" src="Retrato.jpg" alt="Fotografía artística de retrato">
+    <figcaption>
+      <h3>Retratos</h3>
+      <p>La esencia y personalidad de cada persona.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide slide2">
+    <img class="slide-foto slide-foto-eventos" src="Eventos.jpg" alt="Brindis en una celebración">
+    <figcaption>
+      <h3>Eventos</h3>
+      <p>Instantes especiales que merecen ser recordados.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide slide3">
+    <img class="slide-foto slide-foto-parejas" src="Parejas.jpg" alt="Pareja frente al mar vista a través de alianzas">
+    <figcaption>
+      <h3>Parejas</h3>
+      <p>Conexiones auténticas contadas en imágenes.</p>
+    </figcaption>
+  </figure>
+
+  <nav class="puntos" aria-label="Elegir categoría de fotografía">
+    <label for="s1" aria-label="Mostrar retratos"></label>
+    <label for="s2" aria-label="Mostrar eventos"></label>
+    <label for="s3" aria-label="Mostrar parejas"></label>
+  </nav>
+</section>
+
+<section class="album" id="album" aria-labelledby="album-titulo">
+  <div class="album-encabezado">
+    <p class="album-etiqueta">NUEVAS FOTOGRAFÍAS</p>
+    <h2 id="album-titulo">Mi álbum</h2>
+    <p>Un espacio para descubrir las imágenes que se han sumado recientemente a mi galería.</p>
+  </div>
+  <div class="album-grid">
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: perro relajándose">
+        <img src="Dog Relax.jpeg" alt="Perro relajándose durante una sesión fotográfica">
+      </button>
+      <figcaption>Retrato canino</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: perro junto a un automóvil">
+        <img src="Dog and Car.jpeg" alt="Perro junto a un automóvil">
+      </button>
+      <figcaption>Compañero de viaje</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: retrato de un perro">
+        <img src="Dog.jpeg" alt="Retrato de un perro">
+      </button>
+      <figcaption>Amigos de cuatro patas</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: equitación">
+        <img src="Equitacion .jpeg" alt="Escena de equitación">
+      </button>
+      <figcaption>Equitación</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: espantapájaros en el campo">
+        <img src="Espanta Pajaros .jpeg" alt="Espantapájaros en el campo">
+      </button>
+      <figcaption>Vida en el campo</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: niña en un evento especial">
+        <img src="Evento Niña.jpeg" alt="Niña en un evento especial">
+      </button>
+      <figcaption>Un día especial</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: ganadería">
+        <img src="Ganaderia .jpeg" alt="Escena de ganadería">
+      </button>
+      <figcaption>Ganadería</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: retrato de un abuelo">
+        <img src="Grandfather.jpeg" alt="Retrato de un abuelo">
+      </button>
+      <figcaption>Retrato familiar</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: niña durante una ceremonia">
+        <img src="Niña Ceremonia.jpeg" alt="Niña durante una ceremonia">
+      </button>
+      <figcaption>Recuerdo de ceremonia</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: niña sonriente">
+        <img src="Niña Feliz.jpeg" alt="Retrato de una niña sonriente">
+      </button>
+      <figcaption>Sonrisas que perduran</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto: retrato natural de una niña">
+        <img src="Niña Life.jpeg" alt="Retrato natural de una niña">
+      </button>
+      <figcaption>Momentos auténticos</figcaption>
+    </figure>
+    <figure class="foto-album">
+      <button class="foto-album-boton" type="button" aria-label="Ampliar foto de la colección reciente">
+        <img src="Picture.jpeg" alt="Fotografía de la colección reciente">
+      </button>
+      <figcaption>Un instante para recordar</figcaption>
+    </figure>
+  </div>
+  <dialog class="visor-album" id="visor-album" aria-label="Fotografía ampliada">
+    <button class="visor-album-cerrar" type="button" aria-label="Cerrar fotografía ampliada">×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+</section>
+
+<section class="nosotros" id="nosotros">
+  <figure class="col2">
+    <img class="nosotros-foto" src="Fotografia D.Q.png" alt="Ilustración del fotógrafo Quelal">
+  </figure>
+  <article class="nosotros-texto col2">
+    <p class="nosotros-etiqueta">DETRÁS DE LA CÁMARA</p>
+    <h2>Momentos reales, recuerdos para siempre</h2>
+    <p>En Quelal Photography, cada imagen nace de observar los detalles y las emociones que hacen único cada momento.</p>
+    <p>Mi propósito es crear fotografías naturales y cuidadas que puedas volver a disfrutar con el paso del tiempo.</p>
+    <a class="boton" href="#contacto">Hablemos de tu sesión</a>
+  </article>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="servicios-encabezado">
+    <p class="servicios-etiqueta">FOTOGRAFÍA PARA CADA HISTORIA</p>
+    <h2 class="titulo-seccion">Servicios</h2>
+    <p>Elige el tipo de sesión que mejor representa ese momento especial.</p>
+  </div>
+
+  <article class="tarjeta">
+    <span class="icono" aria-hidden="true">01</span>
+    <h3>Retratos</h3>
+    <p>Sesiones individuales, familiares o profesionales, con un estilo natural y personal.</p>
+    <a class="servicio-enlace" href="#contacto">Consultar sesión</a>
+  </article>
+
+  <article class="tarjeta">
+    <span class="icono" aria-hidden="true">02</span>
+    <h3>Eventos</h3>
+    <p>Recuerdos de celebraciones y acontecimientos importantes, capturados en cada detalle.</p>
+    <a class="servicio-enlace" href="#contacto">Consultar sesión</a>
+  </article>
+
+  <article class="tarjeta">
+    <span class="icono" aria-hidden="true">03</span>
+    <h3>Parejas</h3>
+    <p>Una sesión para contar su historia y guardar momentos compartidos.</p>
+    <a class="servicio-enlace" href="#contacto">Consultar sesión</a>
+  </article>
+</section>
+
+<section class="testimonios">
+  <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+
+  <blockquote class="testimonio">
+    <p>"Excelente atención y muy buena calidad. Volveré pronto."</p>
+    <p class="autor">— Ana Pozo, Tulcán</p>
+  </blockquote>
+
+  <blockquote class="testimonio">
+    <p>"Me encantó. Se nota el cariño con el que hacen las cosas."</p>
+    <p class="autor">— Luis Chamorro, San Gabriel</p>
+  </blockquote>
+</section>
+<!-- LLAMADO A LA ACCIÓN -->
+<section class="llamado">
+  <h2>¿Tienes un momento especial en mente?</h2>
+  <p>Cuéntame qué historia quieres guardar y conversemos sobre tu sesión.</p>
+  <a class="boton" href="#contacto">Hablemos de tu sesión</a>
+</section>
+<!-- CONTACTO: formulario -->
+<section class="contacto" id="contacto">
+  <h2 class="titulo-seccion">Contáctanos</h2>
+  <p class="contacto-intro">Cuéntame qué tipo de sesión tienes en mente y conversemos sobre los detalles.</p>
+  <form action="#">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame un poco sobre tu idea..." required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+<!-- PIE DE PÁGINA -->
+<footer class="pie">
+  <section class="pie-col">
+    <h3>Quelal Photography</h3>
+    <p>Fotografía que cuenta tu historia.</p>
+  </section>
+  <nav class="pie-col">
+    <h3>Explora</h3>
+    <a href="Index.html">Inicio</a>
+    <a href="#galeria">Portafolio</a>
+    <a href="#album">Mi álbum</a>
+    <a href="#nosotros">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section class="pie-col">
+    <h3>Hablemos</h3>
+    <p>¿Planeas una sesión? <a href="#contacto">Escríbeme desde la sección de contacto.</a></p>
+  </section>
+  <p class="derechos">© 2026 Quelal Photography. Todos los derechos reservados.</p>
+</footer>
+<script>
+  const visorAlbum = document.querySelector("#visor-album");
+  const imagenAmpliada = visorAlbum.querySelector("img");
+  const tituloAmpliado = visorAlbum.querySelector("p");
+
+  document.querySelectorAll(".foto-album-boton").forEach((boton) => {
+    boton.addEventListener("click", () => {
+      const imagen = boton.querySelector("img");
+      imagenAmpliada.src = imagen.src;
+      imagenAmpliada.alt = imagen.alt;
+      tituloAmpliado.textContent = boton.parentElement.querySelector("figcaption").textContent;
+      visorAlbum.showModal();
+    });
+  });
+
+  visorAlbum.querySelector(".visor-album-cerrar").addEventListener("click", () => {
+    visorAlbum.close();
+  });
+
+  visorAlbum.addEventListener("click", (evento) => {
+    if (evento.target === visorAlbum) {
+      visorAlbum.close();
+    }
+  });
+</script>
+</body>
+</html>
