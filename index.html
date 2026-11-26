@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=Proyecto Final, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelal Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,13 +12,13 @@
 <body>
 
 <header class="encabezado">
-  <a class="logo" href="Index.html" aria-label="Quelal Photography, inicio">
+  <a class="logo" href="index.html" aria-label="Quelal Photography, inicio">
     <span class="logo-nombre">Quelal</span>
     <span class="logo-detalle">Photography</span>
   </a>
   <nav class="menu" aria-label="Navegación principal">
     <ul>
-      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="#galeria">Portafolio</a></li>
       <li><a href="#album">Mi álbum</a></li>
       <li><a href="#nosotros">Sobre mí</a></li>
@@ -26,6 +26,8 @@
     </ul>
   </nav>
 </header>
+
+<main>
 
 <section class="hero">
   <p class="hero-etiqueta">QUELAL PHOTOGRAPHY</p>
@@ -154,10 +156,9 @@
       <figcaption>Un instante para recordar</figcaption>
     </figure>
   </div>
-  <dialog class="visor-album" id="visor-album" aria-label="Fotografía ampliada">
+  <dialog class="visor-album" id="visor-album">
     <button class="visor-album-cerrar" type="button" aria-label="Cerrar fotografía ampliada">×</button>
-    <img src="" alt="">
-    <p></p>
+    <figure id="visor-contenido"></figure>
   </dialog>
 </section>
 
@@ -216,13 +217,13 @@
     <p class="autor">— Luis Chamorro, San Gabriel</p>
   </blockquote>
 </section>
-<!-- LLAMADO A LA ACCIÓN -->
+
 <section class="llamado">
   <h2>¿Tienes un momento especial en mente?</h2>
   <p>Cuéntame qué historia quieres guardar y conversemos sobre tu sesión.</p>
   <a class="boton" href="#contacto">Hablemos de tu sesión</a>
 </section>
-<!-- CONTACTO: formulario -->
+
 <section class="contacto" id="contacto">
   <h2 class="titulo-seccion">Contáctanos</h2>
   <p class="contacto-intro">Cuéntame qué tipo de sesión tienes en mente y conversemos sobre los detalles.</p>
@@ -239,15 +240,16 @@
     <button type="submit">Enviar mensaje</button>
   </form>
 </section>
-<!-- PIE DE PÁGINA -->
+</main>
+
 <footer class="pie">
   <section class="pie-col">
     <h3>Quelal Photography</h3>
     <p>Fotografía que cuenta tu historia.</p>
   </section>
-  <nav class="pie-col">
+  <nav class="pie-col" aria-label="Enlaces del pie de página">
     <h3>Explora</h3>
-    <a href="Index.html">Inicio</a>
+    <a href="index.html">Inicio</a>
     <a href="#galeria">Portafolio</a>
     <a href="#album">Mi álbum</a>
     <a href="#nosotros">Sobre mí</a>
@@ -260,6 +262,5 @@
   </section>
   <p class="derechos">© 2026 Quelal Photography. Todos los derechos reservados.</p>
 </footer>
-</script>
 </body>
 </html>
